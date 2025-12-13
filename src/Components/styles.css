@@ -1,0 +1,44 @@
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.welcome{
+    border: 0.5px black solid;
+    border-radius: 20px;
+    background-color:blanchedalmond;
+    width:90vw;
+    
+}
+.link{
+    margin-left: 700px;
+}
+.link1{
+    margin:10px;
+}
+.list{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+     border: 0.5px black solid;
+     margin:20px;
+     background-color:blanchedalmond;
+}
+.pop{
+     border: 0.5px black solid;
+     border-radius: 20px;
+     display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     
+}
+.dis{
+     border: 0.5px black solid;
+     border-radius: 20px;
+     margin:20px;
+     justify-content: center;
+     background-color: aquamarine;
+     width : 300px;
+}
+.dis:hover{
+    transform: scale(1.1);
+}
