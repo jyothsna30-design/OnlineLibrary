@@ -1,58 +1,44 @@
 import { useParams } from "react-router-dom"
-//import { data1 } from '/src/utilis/data.js'
 import { useState } from "react";
 import {Link} from "react-router-dom"
+import { useSelector } from "react-redux";
+
 
 function Browsebooks(){
-    const data1 = [
-   {id:1, title: "Hawer",author: "joseph",src:"./src/Components/image.png", category:"Fiction"},
-   {id:2, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Non-Fiction"},
-    {id:3, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Sci-Fi"},
-    {id:4, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Romance"},
-     {id:5, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"History"},
- {id:6, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Fiction"},
- {id:7, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Fiction"},
-  {id:8, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Fiction"},
- {id:9, title: "Power",author: "joseph",src:"./src/Components/image.png", category:"Fiction"},
-
-
-]
+  const books = useSelector((state) => state.books);
+  console.log(books);
     const {category} =useParams();
-    
     const [search,setSearch] = useState("");
-    const filteredBooks = data1.filter((b) => {
-    const matchesCategory = category ? b.category == category : true;
-    console.log(matchesCategory)
-    const matchesSearch =
-      b.title.toLowerCase().includes(search.toLowerCase()) ||
-      b.author.toLowerCase().includes(search.toLowerCase());
-     
 
-    return matchesCategory && matchesSearch;
-  });
-  {console.log(filteredBooks)}
+   const filteredBooks = books.filter(book =>
+    book.category === category &&
+    (book.title.toLowerCase().includes(search.toLowerCase()) ||
+     book.author.toLowerCase().includes(search.toLowerCase()))
+     
+);
+{console.log(filteredBooks)}
+   
     return(<>
-             <h1>Browse Books</h1>
-             {category && <h3>Category: {category}</h3>}
-             <input
+             <h1 className="text-center text-3xl text-amber-950 font-extrabold">Browse Books</h1>
+             {category && <h3 className="text-center text-3xl text-gray-300">{category} Books</h3>}
+             <input className="border-2 bg-gray-50"
         type="text"
         placeholder="Search by title or author..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         
       />
-      <div>
+      <div className="flex w-200 h-100"> 
        
-        {filteredBooks.map(book=> {
-            return(
-            <div key={book.id}>
-              <h3>{book.title}</h3>
-              <img src="book.src"></img>
-              <Link to="/viewdetails/${book.id}">View Details</Link>
-            </div>)
-                
-        }
-            )}
+        {filteredBooks.map(book => (
+        <div className="border-2 rounded-lg m-10 bg-amber-200" key={book.id}>
+          <img src={book.src}></img>
+          <h3>{book.title}</h3>
+          <p>{book.author}</p>
+          <a href={`/book/${book.id}`}>View Details</a>
+        </div>
+      ))}
+          
       </div>
         </>)
 }
