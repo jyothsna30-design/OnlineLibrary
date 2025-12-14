@@ -19,23 +19,23 @@ function Browsebooks(){
 {console.log(filteredBooks)}
    
     return(<>
-             <h1 className="text-center text-3xl text-amber-950 font-extrabold">Browse Books</h1>
-             {category && <h3 className="text-center text-3xl text-gray-300">{category} Books</h3>}
-             <input className="border-2 bg-gray-50"
+             <h1 className="text-center text-4xl text-amber-950 font-extrabold">Browse Books</h1>
+             {category && <h3 className="text-center text-3xl text-amber-950">{category} Books</h3>}
+             <input className="border-2 bg-gray-50 ml-125 mt-5 rounded-lg w-60"
         type="text"
         placeholder="Search by title or author..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         
       />
-      <div className="flex w-200 h-100"> 
+      <div className="flex flex-wrap w-300 h-100"> 
        
         {filteredBooks.map(book => (
-        <div className="border-2 rounded-lg m-10 bg-amber-200" key={book.id}>
-          <img src={book.src}></img>
-          <h3>{book.title}</h3>
-          <p>{book.author}</p>
-          <a href={`/book/${book.id}`}>View Details</a>
+        <div className="border-2 rounded-lg m-10 w-50 bg-amber-200 hover:scale-110" key={book.id}>
+          <img src={book.src} className="w-50 h-45"></img>
+          <h3 className="font-bold mt-1">{book.title}</h3>
+          <p>Author: {book.author}</p>
+          <Link to={`/viewdetails/${book.id}`} className="underline text-red-500">View Details</Link>
         </div>
       ))}
           
