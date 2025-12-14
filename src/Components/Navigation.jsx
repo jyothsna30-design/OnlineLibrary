@@ -1,14 +1,14 @@
 
 import { Link } from "react-router-dom"
-import './styles.css'
+
 function Navigation(){
-    return(<><nav>
-        <h2>OLibrary</h2>
-        <div className="link">
-        <Link className="link1" to="/" >Home</Link>
-        <Link className="link1" to="/browsebooks" >Browse Books</Link>
-        <Link className="link1" to="/addbooks" >Add Books</Link>
+    return(<nav className="flex border-2 bg-amber-600 h-15">
+        <h2 className="mr-170 font-extrabold text-black text-5xl">OLibrary</h2>
+        <div className="mt-4">
+        <Link className="mr-3 text-xl" to="/" >Home</Link>
+        <Link className="mr-3 text-xl" to="/browsebooks/Fiction" >BrowseBooks</Link>
+        <Link className="mr-3 text-xl" to="/addbooks" >AddBooks</Link>
         </div>
-        </nav></>)
+        </nav>)
 }
 export default Navigation
