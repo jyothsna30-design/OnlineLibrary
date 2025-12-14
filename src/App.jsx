@@ -5,19 +5,22 @@ import './App.css'
 import {Routes,Route, Outlet } from 'react-router-dom'
 import Homepage from './Components/Homepage'
 import Browsebooks from './Components/Browsebooks'
-import Navigation from './Components/Navigation'
+import './Components/styles.css'
 import AddBooks from './Components/AddBooks'
 import ViewDetails from './Components/ViewDetails'
 import NoFound from './Components/NoFound'
 import Header from './Components/Header'
+
 function App() {
   return( <>
     
-     <Routes element={<Header />}>
+     <Routes >
+      <Route element={<Header />}>
       <Route path="/" element={<Homepage />} />
       <Route path="/browsebooks/:category" element={<Browsebooks />} />
       <Route path="/addbooks" element={<AddBooks />} />
       <Route path="/viewdetails/:id" element={<ViewDetails />} />
+      </Route>
       <Route path="*" element={<NoFound />} />
       
     </Routes>
