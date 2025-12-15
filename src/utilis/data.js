@@ -30,7 +30,7 @@ const books = [
     author: "Frank Herbert",
     category: "Sci-Fi",
     src:dune,
-    description: "Epic science fiction novel.",
+    description: "Dune by Frank Herbert is a classic sci-fi epic about Paul Atreides on the desert planet Arrakis, the universe's only source of the valuable 'spice' melange, exploring deep themes of ecology, religion, politics, and survival as Paul rises to become a messianic leader amidst family betrayal and galactic power struggles involving giant sandworms and the native Fremen.",
     rating: 4.8,
   },
   {
@@ -39,7 +39,7 @@ const books = [
     author: "George Orwell",
     category: "Fiction",
     src:b1984,
-    description: "Dystopian novel.",
+    description: "George Orwell's 1984 is a dystopian novel about a totalitarian super-state, Oceania, where the ruling Party, led by the omnipresent Big Brother,controls every aspect of life through surveillance (Telescreens), propaganda, and thought control, exploring themes of totalitarianism, mass surveillance, censorship, and truth manipulation",
     rating: 4.7,
   },
   {
@@ -48,7 +48,7 @@ const books = [
     author: "Kristain Hannah",
     category: "Fiction",
     src:women,
-    description: "Dystopian novel.",
+    description: "The Women by Kristin Hannah is a bestselling historical novel about Frances Frankie McGrath, a sheltered young woman who becomes an Army nurse in Vietnam in 1965, following her brother to war",
     rating: 4.9,
   },
   {
@@ -57,7 +57,7 @@ const books = [
     author: "Olivie Blank",
     category: "Fiction",
     src:dinner,
-    description: "Dystopian novel.",
+    description: "Girl Dinner by Olivie Blake is a dark, satirical novel about power, ambition, and female bonding within an elite sorority, The House, where a freshman (Nina) and a professor (Sloane) get entangled in a sinister wellness cult that uses ritualistic meals to achieve perfection, exploring themes of female rage, motherhood, and privilege with biting humor and a taste of horror. ",
     rating: 3.5,
   },
   {
@@ -66,7 +66,7 @@ const books = [
     author: "Lucy Jane",
     category: "Fiction",
     src:uncharm,
-    description: "Dystopian novel.",
+    description: "A perfectionist witch who runs a magical London bakery, whose perfectly pink, charmed life gets messy when she must mentor a troubled teenage witch, Maeve, leading to self-discovery, found family with grumpy Hal, and navigating complex magic, love, and belonging outside her curated world.",
     rating: 3,
   },
   {
@@ -75,7 +75,7 @@ const books = [
     author: "William Dalry",
     category: "Non-Fiction",
     src:road ,
-    description: "Dystopian novel.",
+    description: "Describes ancient India (c. 250 BC–1200 AD) as a vibrant, interconnected hub that spread its culture, art, religions (like Buddhism), technology (math, astronomy), and ideas across Eurasia via sea and land routes, fundamentally shaping the world through trade and intellectual exchange",
     rating: 2.5,
   },
   {
@@ -84,7 +84,7 @@ const books = [
     author: "James Clear",
     category: "Non-Fiction",
     src:atom,
-    description: "Dystopian novel.",
+    description: "Atomic Habits by James Clear provides a practical framework for building good habits and breaking bad ones through tiny, incremental changes (atomic habits) that compound over time, focusing on systems over big goals",
     rating: 4.1,
   },
   {
@@ -93,7 +93,7 @@ const books = [
     author: "Morgan Housel",
     category: "Non-Fiction",
     src:money,
-    description: "Dystopian novel.",
+    description: "The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness, by award-winning author Morgan Housel, is a best-selling personal finance book that emphasizes how an individual's behavior and mindset heavily influence their financial success, rather than their intelligence or technical knowledge of finance. ",
     rating: 4.1,
   },
   {
@@ -102,7 +102,7 @@ const books = [
     author: "Keith cooper",
     category: "Sci-Fi",
     src:ama,
-    description: "Dystopian novel.",
+    description: "Amazing Worlds refers to several books, but most prominently to Keith Coopers Amazing Worlds of Science Fiction and Science Fact, which blends fictional planets (like Tatooine, Arrakis, Pandora) with real exoplanet discoveries, assessing their scientific plausibility with expert insights, perfect for sci-fi and popular science fans..",
     rating: 4.9,
   },
   {
@@ -111,7 +111,7 @@ const books = [
     author: "Adrian",
     category: "Sci-Fi",
     src:child,
-    description: "Dystopian novel.",
+    description: "A race for survival among the stars. Humanity's last survivors escaped earth's ruins to find a new home..",
     rating: 4.2,
   },
   {
@@ -120,7 +120,7 @@ const books = [
     author: "Roger Levy",
     category: "Sci-Fi",
     src:rig,
-    description: "Dystopian novel.",
+    description: "Rig is a raw, emotional story about loving someone whose life is divided between land and sea, and the quiet strength it takes to hold on when the world keeps pulling you apart.",
     rating: 4.2,
   },
   {
@@ -129,7 +129,7 @@ const books = [
     author: "Arpita Debanath",
     category: "Romance",
     src:iwill,
-    description: "Dystopian novel.",
+    description: "I Will Always Love You is a heartbreaking yet hopeful second-chance romance about letting go, holding on, and the kind of love that stays with you long after goodbye. It’s about choosing between the safety of what is and the pull of what could have been.",
     rating: 3.6,
   },
   {
@@ -138,7 +138,7 @@ const books = [
     author: "Mhairi McFaraiane",
     category: "Romance",
     src:never,
-    description: "Dystopian novel.",
+    description: "If I Never Met You is a tender, bittersweet story about first love, loss, and the invisible ways one person can shape an entire lifetime. It’s about the kind of love that doesn’t last forever—but changes you forever.",
     rating: 4.5,
   },
   {
@@ -147,7 +147,7 @@ const books = [
     author: "Denise williams",
     category: "Romance",
     src:yours,
-    description: "Dystopian novel.",
+    description: "Technically Yours explores what it means to belong to someone in every way except the one that matters most. It’s a story of timing that’s never quite right, love that never fully lets go, and the haunting question of who you’d be if you never met the person who changed everything.",
     rating: 4.6,
   },
   {
@@ -156,7 +156,7 @@ const books = [
     author: "Lena Jones",
     category: "Mystery",
     src:agatha,
-    description: "Dystopian novel.",
+    description: "Agatha Oddly is a fast-paced, clever middle-grade mystery packed with adventure, heart, and a heroine who proves that being different is sometimes your greatest strength.",
     rating: 4.7,
   },
   {
@@ -165,7 +165,7 @@ const books = [
     author: "Maureen Johnson",
     category: "Mystery",
     src:shot,
-    description: "Dystopian novel.",
+    description: "Truly Devious is a gripping mystery that weaves together past and present, filled with secret passages, clever clues, and twists that keep you guessing. It’s a story about obsession, friendship, and the irresistible pull of an unsolved crime.",
     rating: 4.2,
   },
   {
@@ -174,7 +174,7 @@ const books = [
     author: "Harshavardhan Rao",
     category: "Mystery",
     src:girl,
-    description: "Dystopian novel.",
+    description: "The Girl in the House is a tense, atmospheric mystery about isolation, hidden lives, and the danger of staying silent for too long. It’s a story where nothing is as empty as it seems—and the scariest things are the ones that live just out of sight.",
     rating: 4.9,
   },
   {
@@ -183,7 +183,7 @@ const books = [
     author: "Rupi kaur",
     category: "Poetry",
     src:sun,
-    description: "Dystopian novel.",
+    description: "The Sun and Her Flowers is about honoring where you come from, reclaiming your voice, and finding beauty even after devastation. It is a celebration of resilience—the reminder that even after the harshest seasons, growth is still possible..",
     rating: 2.0,
   },
   {
@@ -192,7 +192,7 @@ const books = [
     author: "Anne raynoe",
     category: "Poetry",
     src:petals,
-    description: "Dystopian novel.",
+    description: "Petals of Healing is a gentle, soul-baring collection about pain, recovery, and learning how to choose yourself again. Through raw reflections and tender words, it explores heartbreak, grief, self-love, and the quiet strength it takes to keep going when you feel undone.",
     rating: 3.7,
   },
   {
@@ -201,7 +201,7 @@ const books = [
     author: "Shel Silverstein",
     category: "Poetry",
     src:Ends,
-    description: "Dystopian novel.",
+    description: "Where the Sidewalk Ends is a beloved collection of poems and illustrations that invites readers into a world of nonsense, wonder, and unexpected wisdom. From children who refuse to take out the trash to giraffes with tiny problems and rules that are meant to be broken, Shel Silverstein blends humor with heart in every page..",
     rating: 4.1,
   },
   {
@@ -210,8 +210,8 @@ const books = [
     author: "J.K.Rowling",
     category: "Fiction",
     src:harry,
-    description: "Dystopian novel.",
-    rating: 5.0,
+    description: "Harry Potter is a story about friendship, courage, love, and the power of choosing what is right—even when it is hard.",
+    rating: 4.9,
   },
   {
     id: "22",
@@ -219,7 +219,7 @@ const books = [
     author: "Matt Haig",
     category: "Fiction",
     src:mid,
-    description: "Dystopian novel.",
+    description: "The Midnight Library is a poignant, thought-provoking novel about regret, hope, and the infinite possibilities that lie within every choice. It reminds readers that even small decisions can shape extraordinary lives—and that it’s never too late to find meaning and happiness.",
     rating: 4.7,
   },
   {
@@ -228,7 +228,7 @@ const books = [
     author: "Alex Leu",
     category: "Sci-Fi",
     src:rose,
-    description: "Dystopian novel.",
+    description: "The Rose Maker is a heartwarming, character‑driven tale of resilience, renewal, and the courage it takes to cultivate a life worth living..",
     rating: 4.7,
   },
   {
@@ -237,7 +237,7 @@ const books = [
     author: "Chris Saran",
     category: "Sci-Fi",
     src:stran,
-    description: "Dystopian novel.",
+    description: "Through a Stranger’s Eyes is an intimate, heartfelt romance about seeing yourself with honesty, learning to love beyond fear, and discovering whether second chances can truly lead to forever.",
     rating: 2.9,
   }
 
