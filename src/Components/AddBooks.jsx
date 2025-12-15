@@ -7,7 +7,7 @@ function AddBooks() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
-
+//Setting form input values
   const [form, setForm] = useState({
     title: "",
     author: "",
@@ -16,18 +16,21 @@ function AddBooks() {
     description: "",
     rating: "",
   });
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //if some values of form are empty,it will show alert msg
     if (Object.values(form).some(v => v === "")) {
       alert("All fields are required");
       return;
     }
-
+     //adding a new book and displaying in the browse books with matching category
     dispatch(addBook({ ...form, id: Date.now().toString() }));
     navigate(`/browsebooks/${form.category}`);
   };
-
+    //form declaration
   return (
     <div className="flex flex-row w-110 border-2 rounded-lg bg-amber-100 ml-100 mt-5">
     <form onSubmit={handleSubmit} >
@@ -44,7 +47,7 @@ function AddBooks() {
       <span className="text-xl font-bold ml-5">Image:</span><input className="border-2 rounded-lg m-5" placeholder="imageurl" onChange={e => setForm({...form, src: e.target.value})} />
       <h2 className="text-xl font-bold ml-5">Description:</h2><textarea className="border-2 rounded-lg m-5 h-20 w-50" placeholder="Description" onChange={e => setForm({...form, description: e.target.value})} /><br></br>
       <span className="text-xl font-bold ml-5">Rating:</span><input className="border-2 rounded-lg m-5" type="number" placeholder="Rating" onChange={e => setForm({...form, rating: e.target.value})} /><br></br>
-      <h4>Image Preview</h4>
+      <h4>Image Preview</h4> 
       {form.src && (
           <img
             src={form.src}
@@ -55,10 +58,7 @@ function AddBooks() {
             }}
             />
         )}
-      
-      
-      
-      
+
       <button className="border-2 font-semibold rounded-lg m-5 w-20 bg-amber-500 hover:scale-110">Add Book</button>
     </form>
     
