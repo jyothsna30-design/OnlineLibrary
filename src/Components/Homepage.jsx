@@ -4,9 +4,11 @@ import { useSelector } from "react-redux";
 import './styles.css'
 
 function Homepage(){
+
   const books = useSelector((state) => state.books);
+  //getting books data and placing in popular books that are rating >=4.7
   const popularBooks = books.filter(book => book.rating >= 4.7).slice(0, 4);
-     
+     //Welcome message and links to books category, popular books cards
     return(<>
     <div id="wel" className="border-2 w-auto m-6 h-50 rounded-lg p-7 text-red-950 text-center text-5xl bg-amber-300">
     <h1>Welcome to OLibrary</h1>
@@ -23,7 +25,7 @@ function Homepage(){
        
     </div>
    
-
+  
     <h1 className="text-4xl bg-amber-200 inline-block ml-140 text-center mt-7 text-amber-950 blink">Popular Books</h1>
     <div className="flex flex-wrap ">
         
