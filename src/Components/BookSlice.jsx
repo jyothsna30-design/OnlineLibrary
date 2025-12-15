@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import booksData from "../utilis/data";
 
+
+//creating bookslice with addBook action
 const booksSlice = createSlice({
   name: "books",
   initialState: booksData,
