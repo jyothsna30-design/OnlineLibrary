@@ -16,7 +16,7 @@
 }
 
 .error{
-   background-image: url(./images/image.png);
+   background-image: url(./images/error.png);
    background-repeat: no-repeat;
    background-size: cover;
     font-size: 40px;
