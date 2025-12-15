@@ -14,10 +14,10 @@ function ViewDetails() {
     <>
       <div className="w-60 h-70 ml-125 mt-5 hover:scale-110">
       <img className="w-60 h-70" src={book.src}></img></div>
-      <div className="w-80 h-60 font-bold ml-125 mt-5">
-      <h2>Title:{book.title}</h2>
+      <div className="w-120 h-60 font-bold ml-125 mt-5">
+      <h2>Title: {book.title}</h2>
       <p>Author: {book.author}</p>
-      <p>Description:{book.description}</p>
+      <p>Description: {book.description}</p>
       <p >Rating: {book.rating}</p>
      
 
