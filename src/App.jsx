@@ -12,6 +12,8 @@ import NoFound from './Components/NoFound'
 import Header from './Components/Header'
 
 function App() {
+
+  //Routes to homepage,browse books,add books and view details,notfound
   return( <>
     
      <Routes >

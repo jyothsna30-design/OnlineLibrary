@@ -4,7 +4,7 @@ import './styles.css'
 function NoFound(){
 
     const location = useLocation();
-
+ //page not found message
   return (<>
       <div className="error">
         

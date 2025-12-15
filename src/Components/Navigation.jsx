@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom"
 
 function Navigation(){
+    //Nav bar with home,browse books and add books
     return(<nav className="flex border-2 bg-amber-600 h-15">
         <h2 className="mr-170 font-extrabold text-black text-5xl">OLibrary</h2>
         <div className="mt-4">
